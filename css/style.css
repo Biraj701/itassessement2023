@@ -1,1 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav-container{
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Home Page */
+.logo{
+    font-size: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* buttons */
+
+.btn-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+
+.btn{
+    font-size: 20px;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+/* active button */
+.active{
+    border: 2px solid cyan;
+}
+
+/* buttons hover */
+.btn:not(.active):hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+
+}
+
+
+/* contact button */
+.contact{
+    background-color: rgb(41, 87, 87);
+    border-radius: 10px;
+}
+
+/* motto */
+
+.motto{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 2px dashed black;
+}
+
+.heading{
+    font-size: 70px;
+}
+
+.catchphrase{
+    font-size: 30px;
+}
+
+/* slider */
+
+.slider-container{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider-container button{
+    padding: 8px 20px;
+    margin: 10px 0 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    
+}
+
+.slider{
+    width: 60%;
+    height: 90%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slide{
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    transition: 0.7s;
+}
+
+
+/* footer */
+footer{
+    background-color: #111;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+    
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    color: white;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+/* blog page */
+
+
+
+
+
+
+main{
+    height: auto;
+    width: 100%;
+}
+
+.blog-container{
+    padding: 30px 0;
+    height:auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog-container >*{
+    height: auto;
+    
+}
+
+.blog{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+}
+
+.blog >*{
+    width: 40%;
+    height: 80%;
+    border-radius: 15px;
+}
+
+.blog-text{
+    width: 75%;
+    background-color: antiquewhite;
+}
+
+.blog-text h1{
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.blog-text p{
+    padding: 5px 30px 20px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    line-height: 25px;
+}
+
+
+
+/* blog recomendation */
+
+.blog-link-container{
+    height: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.blog-links{
+    width: 30%;
+    height: 15vh;
+    margin: 15px 0;
+}
+
+.blog-links h1{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(222, 113, 113);
+}
+
+.other{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 30px;
+    padding-bottom: 10px;
+    width: 50%;
+    border-bottom: 2px solid black;
+}
+
+
+
+
+
+
+
+/* gallery */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.container .heading h3{
+    font-size: 30px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+}
+
+.container .heading span{
+    font-weight: 100;
+}
+
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .box .dream{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .box .dream img{
+    width: 90%;
+    height: 200px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+
+/* resume */
+
+.resume-container{
+    width: 70%;
+    margin: 50px auto;
+    border: 2px solid black;
+
+}
+
+.intro{
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+.intro .name{
+    font-size: 35px; 
+    font-weight: 700;
+    text-align: center;
+}
+
+.intro .proffesion{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+
+.titles{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+
+/* portofolio */
+
+.portofolio-container > *{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+
+.biraj{
+    padding-top: 10px;
+}
+
+
+
+
+
+/* contact us */
+
+.contact-box{
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 20px #999;
+    margin: 10vh auto;
+    padding: 5vh;
+}
+
+.input-field{
+    display: flex;
+    width: 80%;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+    margin: 7vh auto ;
+
+}
+
+.contact-box h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.textarea-field{
+    height: 30vh;
+    padding: 10px 20px;
+}
+
+.submit{
+    display: block;
+    font-size: 15px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    margin: auto;
+    color:white;
+    background-color: black;
+}
+
+.submit:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: 0.4s;
+}
+
+
+
+
+
+
+
+
+
 
